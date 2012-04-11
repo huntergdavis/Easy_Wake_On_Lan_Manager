@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14df27fc287b0d"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" />
+
+    <TextView android:text="Enter Mac Address" android:id="@+id/splittext"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+	<EditText android:layout_width="fill_parent" android:id="@+id/MacAddress"
+		android:text="00:00:00:00:00:00"  android:layout_height="wrap_content"></EditText>
+	<TextView android:text="Or Select From A Previous Mac"
+		android:id="@+id/inventorytext" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></TextView>
+	<Spinner android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/oldmacs">
+	</Spinner>
+	   <TextView android:text="Change Destination Address (Optional)" android:id="@+id/Desttext"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+	<EditText android:layout_width="fill_parent" android:id="@+id/IpAddress"
+		android:text="255.255.255.255"  android:layout_height="wrap_content"></EditText>
+	
+	<Button android:id="@+id/sendPacket" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="Send Wake Packet" />
+
+
+
+
+
+</LinearLayout>
